@@ -65,20 +65,16 @@
     1. 没有创建app时，启动主应用，manage.py,默认开启8000端口，可以通过id:8000访问。
     2. 创建app时，例如创建一个app.
     * app里：
-    * 在apps里 ，写入名字
-    * 在urls里写入搜索连接
+    * 创建并在urls里写入搜索连接
     * 在views里写入 urls关联的在页面显示的内容
     * 主文件里；
     * settings里，在INSTALLED_APPS里添加app名字，
     * urls中，填入app搜索的地址连接，变为去app里搜索。
     * 最后即可通过id:端口/app/关键字
-8. 迁移数据库
-* python manage.py makemigrations
-* python manage.py migrate
+9. 迁移数据库
     1. 首先创建一个app,名字称为stu.
     2. stu里：
-    3. 在apps里 ，写入名字
-    4. 在urls里写入搜索连接
+    4. 创建并在urls里写入搜索连接
     5. 在views里写入 urls关联的在页面显示的内容，写入数据库的内容。
     6. 在models里写入将写入数据库的内容的类型。
     7. 主文件里：
@@ -86,6 +82,8 @@
     9. settings里，在INSTALLED_APPS里添加app名字，在DATABASES里写入连接数据库的操作。
     10. urls中，填入app搜索的地址连接，变为去app里搜索。
     11. 在数据库只需建立一个空数据库，让其连接，即可通过连接修改内容了。
+    12. python manage.py makemigrations
+    13. python manage.py migrate
     11. 最后即可通过id:端口/app/关键字
 
 
